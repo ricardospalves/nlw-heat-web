@@ -1,0 +1,46 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  min-height: 100vh;
+  padding: 500px 80px 0;
+
+  text-align: center;
+
+  background: #17171A url(../../assets/banner-girl.png) no-repeat 50% 0;
+
+  &__heading {
+
+    font-size: 1.5rem;
+  }
+
+  &__signin {
+    $bg-color: #FFCD1E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 4em;
+    padding: 0 1em;
+    margin-top: 2rem;
+
+    font-weight: bold;
+    font-size: .875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #09090A;
+    background-color: $bg-color;
+
+    transition: background-color .2s;
+
+    &:hover,
+    &:focus-visible {
+
+      background-color: lighten($bg-color, 15%);
+    }
+  }
+}

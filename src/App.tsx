@@ -1,8 +1,15 @@
+import styles from './App.module.scss'
+import { LoginBox } from './components/LoginBox'
+import { MessageList } from './components/MessageList'
+
 export const App = () => {
   return (
-    <h1>
-      Hello World
-    </h1>
+    <div id="App" className={styles.App}>
+      <main className={styles.contentWrapper}>
+        <MessageList />
+        <LoginBox />
+      </main>
+    </div>
   )
 }
 

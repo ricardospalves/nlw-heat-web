@@ -1,0 +1,13 @@
+.App {
+  min-height: 100vh;
+}
+
+.contentWrapper {
+  max-width: 75rem;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 453px;
+  column-gap: 7.5rem;
+}
