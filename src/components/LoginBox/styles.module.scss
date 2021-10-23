@@ -42,5 +42,24 @@
 
       background-color: lighten($bg-color, 15%);
     }
+
+    svg {
+      $size: 2em;
+
+      flex: 0 0 $size;
+
+      display: block;
+      width: $size;
+      height: $size;
+      margin-right: 1em;
+
+      fill: currentColor;
+    }
+
+    span {
+      flex-shrink: 0;
+
+      display: block;
+    }
   }
 }
