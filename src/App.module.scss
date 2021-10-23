@@ -1,5 +1,10 @@
 .App {
   min-height: 100vh;
+
+  &--signed {
+    background: url(./assets/background.svg) no-repeat 100% 0;
+    background-size: auto 100vh;
+  }
 }
 
 .contentWrapper {
