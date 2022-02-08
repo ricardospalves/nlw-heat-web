@@ -31,9 +31,11 @@ type AuthResponse = {
   }
 }
 
+const CLIENT_ID = import.meta.env.VITE_GITHUB_CLIENT_ID
+
 export const AuthProvider = (props: AuthProps) => {
   const [user, setUser] = useState<User | null>(null)
-  const signinURL = `https://github.com/login/oauth/authorize?scope=user&client_id=a06a5ac0c1cfe7d7c414`
+  const signinURL = `https://github.com/login/oauth/authorize?scope=user&client_id=${CLIENT_ID}`
 
   const signin = async (githubCode: string) => {
     const response = await api.post<AuthResponse>('authenticate', {
