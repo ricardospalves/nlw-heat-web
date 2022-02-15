@@ -2,6 +2,8 @@
 
 Aplicação React com TypeScript criada durante o NLW Heat da Rocketseat.
 
+<img src="./application.gif" alt="Aplicação em funcionamento">
+
 * [Tecnologias](#-tecnologias)
 * [Como executar](#-como-executar)
 * [Licença](#-licença)
